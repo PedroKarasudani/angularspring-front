@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-tecnico-create',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TecnicoCreateComponent implements OnInit {
 
+  name: FormControl = new FormControl(null, Validators.minLength(3))
+  cpf: FormControl = new FormControl(null, [Validators.required])
+  email: FormControl = new FormControl(null, Validators.email)
+  password: FormControl = new FormControl(null, Validators.minLength(3))
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  validatedFields(): boolean {
+    return this.name.valid && this.email.valid && this.email.valid && this.password.valid
   }
 
 }
