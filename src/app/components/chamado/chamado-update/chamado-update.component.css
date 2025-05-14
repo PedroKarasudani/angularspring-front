@@ -1,38 +1,36 @@
 .container {
-    width: 90%;
-    margin: auto;
+  width: 45%;
+  margin: auto auto 5rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
-table {
-    width: 100%;
-  }
+.full-width {
+  width: 100%;
+}
 
-mat-form-field {
-    width: 100%;
-  }
+h1, img {
+  text-align: center;
+}
+
+img {
+  height: 15rem;
+}
+
+.status-prioridade {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-prioridade mat-form-field {
+  width: 49%;
+}
+
+.descricao {
+  min-height: 6rem;
+  max-height: 10rem;
+}
 
 button {
-    width: 100%;
-  }
-
-h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.edit {
-  color: blue;
-  padding: 1rem;
-}
-
-.delete {
-  color: red;
-  padding: 1rem;
-}
-
-mat-radio-group {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 1rem;
+  margin-top: .5rem;
 }
