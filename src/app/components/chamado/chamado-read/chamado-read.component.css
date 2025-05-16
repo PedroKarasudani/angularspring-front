@@ -1,0 +1,28 @@
+.container {
+    width: 45%;
+    margin: auto auto 5rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  h1, img {
+    text-align: center;
+  }
+  
+  img {
+    height: 15rem;
+  }
+  
+  .descricao {
+    min-height: 6rem;
+    max-height: 10rem;
+  }
+  
+  button {
+    margin-top: .5rem;
+  }
+  
